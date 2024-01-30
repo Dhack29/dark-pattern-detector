@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Simple Website</title>
+    <script src="highlighter.js" defer></script>
+    <style>
+        /* Add styles for the larger search button */
+        #search-form button {
+            padding: 10px 20px; /* Adjust the padding as needed */
+            font-size: 16px;   /* Adjust the font size as needed */
+            border-radius: 8px; /* Add border-radius for rounded edges */
+        }
+    </style>
+</head>
+<body>
+    <!-- Your HTML content goes here -->
+
+    <header>
+        <h1>Dark Pattern Detector</h1>
+    </header>
+
+    <main>
+        <style>
+            /* Add your existing styles here */
+    
+            /* Styles for the footer */
+            footer {
+                color: #fff;
+                padding: 0px;
+                text-align: center;
+                position: fixed;
+                width: 100%;
+                bottom: 0;
+                box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+                opacity: 0.9;
+                backdrop-filter: blur(10px); /* Add blur to the background */
+            }
+    
+            footer:hover {
+                opacity: 1;
+            }
+        </style>
+        <section id="search-section">
+            <h2>Search Website</h2>
+            <form action="#" method="get" id="search-form">
+                <input type="text" id="search-bar" name="search" placeholder="Enter website link...">
+                <button class="button-black" type="submit">Search</button>
+            </form>
+        </section>
+
+        <!-- Add a new section to display the result -->
+        <section id="result-section">
+            <h2>Dark Pattern Analysis Result</h2>
+            <div id="result" class="small-section"></div>
+        </section>
+
+        <section>
+            <a href="https://github.com/Dhack29/dark-pattern-detector.git" target="_blank">
+                <button  class="button-blue">Check on Github</button>
+            </a>
+        </section>
+
+        <section>
+            <a href="https://en.wikipedia.org/wiki/Dark_pattern" target="_blank">
+                <button  class="button-green">Know More</button>
+            </a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Hackerspace</p>
+        <p>DPBH2023</p>
+    </footer>
+
+    <!-- <footer>
+        <p>&copy; 2024 Your Simple Website</p>
+    </footer> -->
+</body>
+</html>

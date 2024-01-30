@@ -1,0 +1,210 @@
+body {
+    font-family: 'Aptos Display', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light gray background */
+    color: #fff; /* Default text color */
+    background: url('th1.avif') center center fixed; /* Set the background image */
+}
+
+/* Add the @import rule to include the Aptos Display font */
+@import url('https://fonts.googleapis.com/css2?family=Aptos+Display:wght@400;700&display=swap');
+
+header {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    opacity: 0.9; /* Transparent effect */
+    backdrop-filter: blur(10px); /* Add blur to the background */
+}
+
+main {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(208, 12, 212, 0.23); /* Slightly transparent white background */
+    border-radius: 8px; /* Add some border-radius for a rounded appearance */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+/*
+main:hover {
+    background-color: rgba(255, 255, 255, 1); /* Full opacity on hover */
+
+section {
+    margin-bottom: 30px;
+    flex: 1; /* Each section takes up equal width */
+}
+
+/* Increase the size of the search bar */
+#search-bar {
+    width: 70%; /* Adjust the width as needed */
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #ddd; /* Light gray border */
+    border-radius: 8px;
+    transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+#search-bar:focus {
+    border-color: #3498db; /* Border color on focus */
+}
+
+
+#search-bar:hover, #search-button:hover, #result-section:hover {
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Center the search bar and button in their section */
+#search-section {
+    margin: 0 auto;
+    flex-basis: 100%; /* Full width on the first line */
+}
+
+/* Small section styling for About and Contact */
+.small-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: rgba(233, 8, 8, 0.295); /* Slightly transparent white background */
+    border-radius: 8px; /* Add some border-radius for a rounded appearance */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+/*
+.small-section:hover {
+    background-color: rgba(255, 255, 255, 1); /* Full opacity on hover */
+
+
+/*footer {
+    background: linear-gradient(to right, #3498db, #2c3e50); /* Gradient background */
+ /*   color: #fff;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+   /* opacity: 0.9; /* Transparent effect */
+/*}
+
+footer:hover {
+    opacity: 1; /* Full opacity on hover */
+/*}*/
+
+/* Add some basic styling for the result section */
+#result-section {
+    margin-top: 20px;
+    text-align: center; /* Center-align the text */
+    flex-basis: 100%; /* Full width on the second line */
+}
+
+/* Style for the result div */
+#result {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+   
+}
+
+/* Additional styling for the dark pattern analysis result */
+#result p {
+    color: #e74c3c; /* Red color */
+    font-weight: bold;
+}
+
+/* Add a subtle glow effect on hover for important elements */
+#search-bar:hover, #search-button:hover, #result-section:hover {
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5); /* Blue glow effect on hover */
+    transition: box-shadow 0.3s ease; /* Smooth box shadow transition on hover */
+}
+/* Increase the size of the search bar and add more styling */
+#search-bar {
+    width: 80%; /* Adjust the width as needed */
+    padding: 15px;
+    font-size: 20px;
+    border: 2px solid #3498db; /* Default border color */
+    border-radius: 25px;
+    outline: none; /* Remove the default focus outline */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+
+    /* Additional styling for a clean and professional look */
+    background-color: #fff; /* White background */
+    color: #333; /* Default text color */
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.2); /* Subtle box shadow */
+}
+
+/* Change border color on focus */
+#search-bar:focus {
+    border-color: #45a049; /* Green border color on focus */
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5); /* Enhanced box shadow on focus */
+}
+/* Style and color for the search button */
+/* Style and color for the search button */
+.button-black {
+    padding: 18px 30px; /* Increased padding for a more spacious look */
+    font-size: 20px;   /* Adjusted font size */
+    background-color: #010e06; /* Tomato color */
+    color: #f0eff5;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+}
+
+.button-black:hover {
+    background-color: #c90707; /* Darker tomato color on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Slightly larger shadow on hover */
+}
+
+.button-black:active {
+    animation: pulse 0.3s ease-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow on button click */
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.button-black:active {
+    animation: pulse 0.3s ease-out;
+}
+
+section {
+    text-align: center;
+}
+
+.button-green {
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #575858;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-green:hover {
+    background-color: #2980b9;
+}
+
+.button-blue {
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #575858;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-blue:hover {
+    background-color: #2980b9;
+}
